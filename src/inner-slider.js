@@ -117,11 +117,12 @@ export var InnerSlider = React.createClass({
   slickNext: function () {
     this.changeSlide({message: 'next'});
   },
-  slickGoTo: function (slide) {
+  slickGoTo: function (slide, dontAnimate) {
     typeof slide === 'number' && this.changeSlide({
       message: 'index',
       index: slide,
-      currentSlide: this.state.currentSlide
+      currentSlide: this.state.currentSlide,
+      dontAnimate
     });
   },
   render: function () {

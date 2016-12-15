@@ -52,8 +52,8 @@ var Slider = React.createClass({
     this.innerSlider.slickNext();
   },
 
-  slickGoTo: function (slide) {
-    this.innerSlider.slickGoTo(slide)
+  slickGoTo: function (slide, dontAnimate) {
+    this.innerSlider.slickGoTo(slide, dontAnimate)
   },
 
   render: function () {
